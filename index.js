@@ -17,7 +17,7 @@ function evenorodd(a) {
     } else {
         return "odd";
     }
-
+//jbhbj
 }
 
 multi(1, 2, 3);
