@@ -83,11 +83,6 @@ function zer(a) {
 let resultzer0 = zer(2);
 
 
-function down(x) {
-
-    return;
-}
-
 let user_en = 5;
 let x = 5;
 
