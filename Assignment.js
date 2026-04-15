@@ -7,7 +7,7 @@ let isStudent = true;
 console.log(name, Id, isStudent);
 
 // operators
- let marks1 = 75;
+let marks1 = 75;
 let marks2 = 85;
 
 let total = marks1 + marks2;
@@ -33,7 +33,6 @@ if (age >= 18 && isStudent) {
 } else {
     console.log("Not eligible");
 }
-
 
 for (let i = 1; i <= 5; i++) {
     console.log(i);
