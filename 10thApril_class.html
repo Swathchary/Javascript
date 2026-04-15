@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- 
+    Challenge 1
+
+Change:
+
+the heading by id
+all paragraphs by class
+all buttons by tag -->
+
+<h1 id="title">Welcome</h1>
+<p class="text">One</p>
+<p class="text">Two</p>
+<button>Send</button>
+<button>Reset</button>
+
+        
+</body>
+<script>
+    let head1 = document.getElementById("title");
+
+     head1.innerHTML = "Hello Student";
+
+     let head2 = document.getElementsByClassName("text");
+
+     head2[0].innerText = "Hiiii";
+
+     let button = document.getElementsByTagName("button");
+
+     button[0].innerText = "Cancel";
+
+</script>
+
+</html>
