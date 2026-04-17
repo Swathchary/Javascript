@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation </title>
+
+    <style>
+        labelstyle {
+            margin-top: 25px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form id="formSelect">
+        <label> Name : </label>
+
+        <input placeholder="Name" title="Name" id="nme">
+
+        <p class="error" id="nameerror"> </p>
+
+        </br>
+        <label id="labelstyle"> Mobile : </label>
+
+        <input placeholder="Enter Mobile Number" title="Mobile Number" id="mble">
+
+        <p class="error" id="mbleerror"> </p>
+
+
+        </br>
+        <label id="labelstyle"> Email : </label>
+
+        <input placeholder="Enter Email Id" title="Email" id="email">
+
+        <p class="error" id="emailerror"> </p>
+
+        <textarea id="meassage"> please enter message</textarea>
+
+        <p class="error" id="msgggerror"> </p>
+
+        <button type="submit"> Submit</button>
+
+    </form>
+
+    <script>
+
+        let formSelect = document.getElementById("formSelect");
+
+
+        formSelect.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            let name = document.getElementById("nme");
+
+            let mobile = document.getElementById("mble");
+
+            let email = document.getElementById("email");
+
+            let txtmesasage = document.getElementById("meassage");
+
+            let paranameerror = document.getElementById("nameerror");
+            let parambleerror = document.getElementById("mbleerror");
+            let paraemailerror = document.getElementById("emailerror");
+            let paramsgggerror = document.getElementById("msgggerror");
+
+
+              let validate = true;
+
+            if(name === ""){
+             paranameerror.innerText("Please enter Name")
+                 validate = false;
+
+            }
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>
