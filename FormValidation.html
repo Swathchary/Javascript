@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation </title>
 
-    <style>
-        labelstyle {
-            margin-top: 25px;
-        }
-    </style>
 
 
 </head>
@@ -49,10 +44,10 @@
 
     <script>
 
-        let formSelect = document.getElementById("formSelect");
+        let formmSelect = document.getElementById("formSelect");
 
 
-        formSelect.addEventListener("submit", function (e) {
+        formmSelect.addEventListener("submit", function (e) {
 
             e.preventDefault();
 
@@ -74,6 +69,16 @@
 
             if(name === ""){
              paranameerror.innerText("Please enter Name")
+                 validate = false;
+
+            }
+
+             if(mobile === ""){
+             parambleerror.innerText("Please enter MobileNo")
+                 validate = false;
+
+            } if(email === ""){
+             paraemailerror.innerText("Please enter Email")
                  validate = false;
 
             }
